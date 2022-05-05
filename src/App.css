@@ -1,38 +1,69 @@
+body {
+  background-color: #4882f4;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+
+.white {
   color: white;
 }
+.h1-white {
+  font-size: 5vw;
+  font-weight: bold;
+  color: white;
+}
+.h3-white {
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: white;
+}
+.pt-5 {
+  padding-top: 3rem;
+}
+.label {
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+  white-space: initial;
+}
+.Row {
+  display: table;
 
-.App-link {
-  color: #61dafb;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+.tex-center {
+  text-align: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wrapper {
+  display: grid;
+
+  grid-template-columns: 30% 60%;
+}
+
+.size-img {
+  height: 15vw;
+}
+
+.text-start {
+  text-align: start !important;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-pokemon {
+  font-size: 2vw;
+}
+@media (max-width: 425px) {
+  .text-pokemon {
+    font-size: 3vw;
   }
-  to {
-    transform: rotate(360deg);
+  .size-img {
+    min-height: 30vw !important;
   }
 }
